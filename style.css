@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 145, 24);
+    font-family: 'calibri';
+    font-size: 18px;
+}
+menu{
+color: black;
+font-size: 10px;
+font-family: Arial;
+}
+
+.topo{
+    text-align: center;
+    padding: 50px;
+    font-size: 15px;
+}
+
+
+
+.topo a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.materia{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 15px;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+.materia img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.materia h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.titulo{
+    font-family: initial;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.botao{
+    background-color:orange;
+    color:black;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 0;
+}
+
+.botao:hover {
+    background-color: aqua;
+}
+
+.grade{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(500px,1fr));
+    gap: 10px;
+}
+
+@media (min-width: 405px) {
+    .materia h1 {
+        font-size: 20px;
+        width: 315px;
+    }
+}
+
+
