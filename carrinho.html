@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+<!--Links-->
+<link rel="shortcut icon" href="images/35594.svg" type="image/svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<!--Area do Site-->
+<body>
+ 
+<!--Cabeçalho-->
+<header class="main-header">
+    <!--Navegação-->
+    <nav class="main-nav container">
+     <!--Lista não ordenada-->
+    <ul class="header-list-container">
+    <!--Intem na Lista-->
+    <li class="nav-item"><!--Logotipo do Site-->
+        <a  href="index.html">
+       <img src="imagens/VPN (2).png" alt="logo" height="100" width="100">
+    </a> 
+    <li class="nav-item">
+        <a href="contato.html">Contato</a>
+    </li>
+    
+    <li class="nav-item">
+        <a href="carrinho.html">Carrinho</a>
+    </li>
+    </ul>
+    
+          
+</section>        
+<br>
+        <section class="container">
+
+                 <h2 class="title-median">Carrinho</h2>
+
+ <table class="cart-table">
+ <thead>
+ <tr>
+ <th class="table-head-item first-col">Item</th>
+ <th class="table-head-item second-col">preço</th>
+ <th class="table-head-item third-col">Quantidade</th>
+ </tr>
+ </thead>
+
+ <tbody>
+
+ <tr class="cart-product">
+ <td class="product-indentification"> 
+ <img class="cart-product-image" src="imagens/bolsa1.jpg" alt="bolsa3">
+ <strong class="cart-product-title">bolsa</strong>
+ </td>
+ <td>
+ <span class="cart-product-prince"> R$120,00</span>
+ </td>
+ <td>
+ <input class="product-qnt-input" type="number" value="2" min="0">
+ <button class="remove-product-button" type="button">remover</button>
+ </td>
+ </tr>
+
+
+ <tr class="cart-product">
+ <td class="product-indentification">
+ <img class="cart-product-image" src="imagens/caneca2.jpg" alt="caneca3">
+ <strong class="cart-product-title">canecat</strong>
+ </td>
+ <td>
+ <span class="cart-product-prince">R$60,35</span>
+ </td>
+ <td>
+ <input class="product-qnt-input" type="number" value="2" min="0">
+ <button class="remove-product-button" type="button">remover</button>
+ </td>
+ </tr>
+
+ <tfoot>
+ <tr>
+
+ <td class="cart-total-container" colspan="3">
+ <strong>total</strong>
+ <span></span>
+ </td>
+ </tr>
+
+
+                </tfoot>
+            </table>
+
+            <button class="purchase-button" type="button">Finalizar compra</button>
+
+        </section>
+
+
+    </main>
+</body>
+</html>
