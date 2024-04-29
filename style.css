@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=RocknRoll+One&family=Satisfy&display=swap');
+@im@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Great+Vibes&family=Lobster&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=RocknRoll+One&family=Satisfy&display=swap');
 
 *{
     margin: 0;
@@ -71,7 +71,7 @@ li {
 .nav-item:hover {
     color: black;
     transition: 0.2s;
-
+    transform: scale(1.2);
 }
 
 .main-about {
@@ -84,12 +84,12 @@ li {
     margin: 0 auto;
 }
 
-.title-median {
-    font-family: "Roboto", sans-serif;
-    font-size: 32px;
+.title-median{
+    font-size: 30px;
+    font-family: '', sans-serif;
+    color: black;
+    margin-bottom: 40px;
     text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 24px;
 }
 
 .about-image {
@@ -126,22 +126,6 @@ li {
     justify-content: space-between; 
 }
 
-.footer-Item {
-    width: 50px;
-    height: 50px;
-    padding: 15px 0;
-}
-
-.footer-Item , .footer-Item {
-    margin-left: 16px;
-}
-
-.contact-text {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 28px;
-    color: var(--Gray);
-}
 .text{
     margin: 15px;
     text-align: center;
@@ -154,15 +138,19 @@ li {
 
 }
 .button-form{
-    background-color: beige;
+    background-color: white;
     color: black;
-    padding: 8px 4px;
+    padding: 5px 7px;
     border-radius: 8px ;
     font-size: 14px;
     box-shadow: 3px 3px black;
    
 }
 
+.button-form:hover {
+    background-color: brown;
+    color: beige;
+}
 
 .contact {
     background-color: lightgrey;
@@ -192,7 +180,7 @@ li {
 }
 
 .contact-field:focus {
-    background-color: var(--Gray);
+    background-color:white;
     outline: none;
 }
 
@@ -206,17 +194,19 @@ textarea.contact-field {
 
 
 .button{
-    background-color: rgb(231, 189, 184);
-    color: blue;
+    background-color: thistle;
+    color: black;
     padding: 8px 6px;
     border-radius: 10px;
     font-size: 14px;
     box-shadow: 3px 3px black;
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: blue;
-    color: rgb(231, 189, 184);
+    background-color: lime;
+    color: black;
+    transform: scale(1.2);
 }
 
 
@@ -231,7 +221,7 @@ textarea.contact-field {
 .title-large {
     font-family: "rock s", cursive;
     font-size: 38px;
-    color: blue;
+    color: black;
     text-align: center;
 }
 
@@ -314,8 +304,8 @@ textarea.contact-field {
 }
 
 .cart-product-image {
-    width: 120px; 
-    height: 80px;
+    width: 270px; 
+    height: 200px;
 }
 
 .cart-product-title {
@@ -326,53 +316,17 @@ textarea.contact-field {
     font-family: "Raleway", sans-serif;
 }
 
-.product-qnt-input {
-    width: 45px;
-    height: 35px;
-    border: 2px solid blue;
-    border-radius: 5px;
-    background-color: var(--Gray);
-    text-align: center;
-}
 
-.remove-product-button {
-    background-color: var(--red);
-    color: var(--width);
-    border: 0;
-    border-radius: 5px;
-    padding: 4px 2px;
-    margin-left: 5px;
-}
 
 .remove-product-button:hover {
     filter: brightness(0,8); 
 }
 
-.cart-total-container {
-    border-top: 1px solid var(--Gray);
-    text-align: end; 
-    padding: 6px 16px 0 0; 
-}
+
 
 .cart-total-container strong {
     margin-right: 10px;
 }
-
-.purchase-button {
-    display: flex;
-    padding: 16px 20px; 
-    background-color: var(--blue);
-    color: var(--width);
-    border-radius: 6px;
-    text-transform: uppercase;
-    border: 0;
-    font-weight: bold;
-    margin: 24px auto 0;
-}
-
-
-
-
 
 .box{
     width: 100%;
@@ -380,13 +334,6 @@ textarea.contact-field {
 }
 
 
-
-.title-median{
-    font-size: 30px;
-    font-family: 'Roboto';
-    color: black;
-    margin-bottom: 40px;
-}
 
 .cart-table{
     font-size: 28px;
@@ -396,10 +343,11 @@ textarea.contact-field {
 .remove-product-button{
     background-color: white; 
     color: black;
-    padding: 10px 8px;
-    border-radius: 10px;
-    font-size: 15px;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-size: 16px;
     box-shadow: 3px 3px black;
+    cursor: pointer;
 }
 
 .remove-product-button:hover {
@@ -415,6 +363,7 @@ textarea.contact-field {
     font-size: 18px;
     box-shadow: 3px 3px black; 
     margin-bottom:500px ;
+    cursor: pointer;
 }
 
 .purchase-button:hover {
@@ -427,8 +376,8 @@ textarea.contact-field {
 } 
 
 .product-qnt-input{
-    width: 45px;
-    height: 35px;
+    width: 50px;
+    height: 45px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: lightsteelblue;
@@ -440,4 +389,13 @@ textarea.contact-field {
     display: block;
     align-items: center;
     background-color:papayawhip;
+}
+
+.main-footer{
+    background-color: whitesmoke;
+    color: black;
+    text-align: 5px 0px;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+   margin-top: 30px;
 }
