@@ -1,224 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
-<!--Links-->
-<link rel="shortcut icon" href="images/35594.svg" type="image/svg">
-<link rel="stylesheet" href="style.css">
-</head>
-<!--Area do Site-->
-<body>
- 
-    <header class="main-header">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrinho</title>
+        <link rel="shortcut icon" href="images/35594.svg" type="image/svg">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+        <header class="main-header">
+                
+            <nav class="main-nav">
+                
+                <ul class="header-list-container">
+                
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <img class="log-zoom" src="imagens/" alt="logo" height="150" width="150">
+                        </a> 
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="carrinho.html">carrinho</a>
+                    </li>
+                    
+                    <li class="nav-item" >
+                        <a href="contato.html">contato</a>
+                    </li>
+                </ul>
+            </nav>   
+        </Header>
         
-        <nav class="main-nav">
+            <section class="container-item">
+
+                <h2 class="title-median">Carrinho</h2>
+
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th class="table-head-item first-col">Item</th>
+                            <th class="table-head-item second-col">preço</th>
+                            <th class="table-head-item third-col">Quantidade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="cart-product">
+                            <td class="product-indentification"> 
+                                <img class="cart-product-image" src="imagens/" alt="">
+                                <strong class="cart-product-title"></strong>
+                            </td>
+                            <td>
+                                <span class="cart-product-prince"> R$</span>
+                            </td>
+                            <td>
+                                <input class="product-qnt-input" type="number" value="2" min="0">
+                                <button class="remove-product-button" type="button">remover</button>
+                            </td>
+                        </tr>
+
+
+                        <tr class="cart-product">
+                            <td class="product-indentification">
+                                <img class="cart-product-image" src="" alt="">
+                                <strong class="cart-product-title"></strong>
+                            </td>
+                            <td>
+                                <span class="cart-product-prince">R$</span>
+                            </td>
+                            <td>
+                                <input class="product-qnt-input" type="number" value="2" min="0">
+                                <button class="remove-product-button" type="button">remover</button>
+                            </td>
+                        </tr>
+
+                        <td class="cart-total-container" colspan="3">
+                            <span></span>
+                        </td>
+
+                        <tr class="cart-product">
+                            <td class="product-indentification"> 
+                                <img class="cart-product-image" src="imagens/" alt="">
+                                <strong class="cart-product-title"></strong>
+                            </td>
+                            <td>
+                                <span class="cart-product-prince"> R$</span>
+                            </td>
+                            <td>
+                                <input class="product-qnt-input" type="number" value="2" min="0">
+                                <button class="remove-product-button" type="button">remover</button>
+                            </td>
+                        </tr>
+
+
+                        <tr class="cart-product">
+                        <td class="product-indentification">
+                        <img class="cart-product-image" src="" alt="">
+                        <strong class="cart-product-title"></strong>
+                        </td>
+                        <td>
+                        <span class="cart-product-prince">R$</span>
+                        </td>
+                        <td>
+                        <input class="product-qnt-input" type="number" value="2" min="0">
+                        <button class="remove-product-button" type="button">remover</button>
+                        </td>
+                        </tr>
+
+                        <tr class="cart-product">
+                        <td class="product-indentification"> 
+                        <img class="cart-product-image" src="imagens/" alt="">
+                        <strong class="cart-product-title"></strong>
+                        </td>
+                        <td>
+                        <span class="cart-product-prince"> R$</span>
+                        </td>
+                        <td>
+                        <input class="product-qnt-input" type="number" value="2" min="0">
+                        <button class="remove-product-button" type="button">remover</button>
+                        </td>
+                        </tr>
+                        
+                        
+                            <tr class="cart-product">
+                            <td class="product-indentification">
+                            <img class="cart-product-image" src="" alt="">
+                            <strong class="cart-product-title"></strong>
+                            </td>
+                            <td>
+                            <span class="cart-product-prince">R$</span>
+                            </td>
+                            <td>
+                            <input class="product-qnt-input" type="number" value="2" min="0">
+                            <button class="remove-product-button" type="button">remover</button>
+                            </td>
+                            </tr>
+                        
+                            <tr>
+                        
+                            <td class="cart-total-container" colspan="3">
+                        
+                            <span></span>
+                            </td>
+                            </tr>
+                        
+                        
+                        
+                            <tr class="cart-product">
+                            <td class="product-indentification"> 
+                            <img class="cart-product-image" src="imagens/" alt="">
+                            <strong class="cart-product-title"></strong>
+                            </td>
+                            <td>
+                            <span class="cart-product-prince"> R$</span>
+                            </td>
+                            <td>
+                            <input class="product-qnt-input" type="number" value="2" min="0">
+                            <button class="remove-product-button" type="button">remover</button>
+                            </td>
+                            </tr>
+                        
+                        
+                            <tr class="cart-product">
+                            <td class="product-indentification">
+                            <img class="cart-product-image" src="" alt="">
+                            <strong class="cart-product-title"></strong>
+                            </td>
+                            <td>
+                            <span class="cart-product-prince">R$</span>
+                            </td>
+                            <td>
+                            <input class="product-qnt-input" type="number" value="2" min="0">
+                            <button class="remove-product-button" type="button">remover</button>
+                            </td>
+                            </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+
+                    <td class="cart-total-container" colspan="3">
+                        <td class="cart-total-container" colspan="3">
+                            <strong>total</strong>
+                            <span>R$ </span>
+
+                    </td>
+                    </tr>
+                    </tfoot>
+                </table>
+                
+                <button class="purchase-button" type="button">Finalizar compra</button>
+
+            </section>
+
+
+            </main>
+
+            <footer class="main-footer">
         
-        <ul class="header-list-container">
-        
-        <li class="nav-item">
-        <a href="index.html">
-        <img class="log-zoom" src="imagens/" alt="logo" height="150" width="150">
-        </a> 
-        </li>
+            
+                <h3>Copyright © 2024, Espaço NVP Produtos Artesanais <h3>
+                
+                
+            
+                
+                </footer>
 
-        <li class="nav-item">
-        <a href="carrinho.html">carrinho</a>
-        </li>
-        
-        <li class="nav-item" >
-        <a href="contato.html">contato</a>
-        </li>
-</ul>     
-
-
-</section>        
-<br>
-        <section class="container-item">
-
-        <h2 class="title-median">Carrinho</h2>
-
- <table class="cart-table">
- <thead>
- <tr>
- <th class="table-head-item first-col">Item</th>
- <th class="table-head-item second-col">preço</th>
- <th class="table-head-item third-col">Quantidade</th>
- </tr>
- </thead>
-
- <tbody>
-
- <tr class="cart-product">
- <td class="product-indentification"> 
- <img class="cart-product-image" src="imagens/" alt="">
- <strong class="cart-product-title"></strong>
- </td>
- <td>
- <span class="cart-product-prince"> R$</span>
- </td>
- <td>
- <input class="product-qnt-input" type="number" value="2" min="0">
- <button class="remove-product-button" type="button">remover</button>
- </td>
- </tr>
-
-
- <tr class="cart-product">
- <td class="product-indentification">
- <img class="cart-product-image" src="" alt="">
- <strong class="cart-product-title"></strong>
- </td>
- <td>
- <span class="cart-product-prince">R$</span>
- </td>
- <td>
- <input class="product-qnt-input" type="number" value="2" min="0">
- <button class="remove-product-button" type="button">remover</button>
- </td>
- </tr>
-
- <tr>
-
- <td class="cart-total-container" colspan="3">
-
- <span></span>
- </td>
- </tr>
-
-
-
- <tr class="cart-product">
- <td class="product-indentification"> 
- <img class="cart-product-image" src="imagens/" alt="">
- <strong class="cart-product-title"></strong>
- </td>
- <td>
- <span class="cart-product-prince"> R$</span>
- </td>
- <td>
- <input class="product-qnt-input" type="number" value="2" min="0">
- <button class="remove-product-button" type="button">remover</button>
- </td>
- </tr>
-
-
- <tr class="cart-product">
- <td class="product-indentification">
- <img class="cart-product-image" src="" alt="">
- <strong class="cart-product-title"></strong>
- </td>
- <td>
- <span class="cart-product-prince">R$</span>
- </td>
- <td>
- <input class="product-qnt-input" type="number" value="2" min="0">
- <button class="remove-product-button" type="button">remover</button>
- </td>
- </tr>
-
- <tr class="cart-product">
-    <td class="product-indentification"> 
-    <img class="cart-product-image" src="imagens/" alt="">
-    <strong class="cart-product-title"></strong>
-    </td>
-    <td>
-    <span class="cart-product-prince"> R$</span>
-    </td>
-    <td>
-    <input class="product-qnt-input" type="number" value="2" min="0">
-    <button class="remove-product-button" type="button">remover</button>
-    </td>
-    </tr>
-   
-   
-    <tr class="cart-product">
-    <td class="product-indentification">
-    <img class="cart-product-image" src="" alt="">
-    <strong class="cart-product-title"></strong>
-    </td>
-    <td>
-    <span class="cart-product-prince">R$</span>
-    </td>
-    <td>
-    <input class="product-qnt-input" type="number" value="2" min="0">
-    <button class="remove-product-button" type="button">remover</button>
-    </td>
-    </tr>
-   
-    <tr>
-   
-    <td class="cart-total-container" colspan="3">
-   
-    <span></span>
-    </td>
-    </tr>
-   
-   
-   
-    <tr class="cart-product">
-    <td class="product-indentification"> 
-    <img class="cart-product-image" src="imagens/" alt="">
-    <strong class="cart-product-title"></strong>
-    </td>
-    <td>
-    <span class="cart-product-prince"> R$</span>
-    </td>
-    <td>
-    <input class="product-qnt-input" type="number" value="2" min="0">
-    <button class="remove-product-button" type="button">remover</button>
-    </td>
-    </tr>
-   
-   
-    <tr class="cart-product">
-    <td class="product-indentification">
-    <img class="cart-product-image" src="" alt="">
-    <strong class="cart-product-title"></strong>
-    </td>
-    <td>
-    <span class="cart-product-prince">R$</span>
-    </td>
-    <td>
-    <input class="product-qnt-input" type="number" value="2" min="0">
-    <button class="remove-product-button" type="button">remover</button>
-    </td>
-    </tr>
-
- <tfoot>
- <tr>
-
- <td class="cart-total-container" colspan="3">
-    <td class="cart-total-container" colspan="3">
-        <strong>total</strong>
-        <span>R$ </span>
-
- </td>
- </tr>
-
-
-                </tfoot>
-            </table>
-
-          
-
-            <button class="purchase-button" type="button">Finalizar compra</button>
-
-        </section>
-
-
-    </main>
-
-    <footer class="main-footer">
-   
-     
-        <h3>Copyright © 2024, Espaço NVP Produtos Artesanais <h3>
-        
-         
-       
-         
-         </footer>
-
-</body>
+    </body>
 </html>
