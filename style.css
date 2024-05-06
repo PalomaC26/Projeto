@@ -7,7 +7,12 @@
 }
 
 body{
-    background-color:whitesmoke;
+    background-color:;
+}
+
+.product-box{
+    border-radius: 5px;
+
 }
 
 li {
@@ -23,6 +28,7 @@ li {
     padding: 10px;
     border-radius: 5px;
     color:black;
+    
 }
 .sub-items li{
     margin-bottom: 5px;
@@ -42,8 +48,8 @@ li {
 }
 
 .main-header {
-   background-image: url();
-    background-position: 50% 39%; 
+    background-image: url(imagens/);
+    background-position: 50% 39%;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -75,6 +81,7 @@ margin-top: 60px;
     justify-content: space-between; 
     align-items: center;
     padding: 16px 0; 
+    background-color: rgb(189, 189, 218);
 }
 
 .header-container {
@@ -94,8 +101,6 @@ margin-top: 60px;
     font-family: 'calibri';
     display: block;
     align-items: center;
-
-
 }
 
 .nav-item a {
@@ -237,8 +242,8 @@ textarea.contact-field {
 }
 
 .button:hover {
-    background-color: white;
-    color: black;
+    background-color: lime;
+    color: white;
     transform: scale(1.1);
 }
 
@@ -260,14 +265,16 @@ textarea.contact-field {
 
 .description {
     text-align: center;
-    color: Gray;
+    color: blue;
     padding-bottom: 10px;
+    font-size: 20px;
+    font-family: "Satisfy", cursive;
 }
 
 .product-container {
-    display: flex;
+    text-align: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     gap: 40px;
     padding-bottom: 30px;
 }
@@ -414,6 +421,7 @@ textarea.contact-field {
 }
 
 .main-footer{
+    background-image: url(imagens/logofundo.jpg);
     background-color: maroon;
     color: black;
     padding: 5px 0px;
