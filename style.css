@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color:;
+    background-color:rgb(189, 189, 218);
 }
 
 .product-box{
@@ -179,8 +179,7 @@ margin-top: 60px;
 
 }
 .button-form{
-    background-color: white;
-    color: black;
+    background-color: greenyellow;
     padding: 5px 7px;
     border-radius: 8px ;
     font-size: 14px;
@@ -189,7 +188,7 @@ margin-top: 60px;
 }
 
 .button-form:hover {
-    background-color: brown;
+    background-color: greenyellow;
     color: beige;
 }
 
@@ -265,10 +264,9 @@ textarea.contact-field {
 
 .description {
     text-align: center;
-    color: blue;
     padding-bottom: 10px;
     font-size: 20px;
-    font-family: "Satisfy", cursive;
+    font-family: "Arial", cursive;
 }
 
 .product-container {
@@ -369,7 +367,7 @@ textarea.contact-field {
 }
 
 .remove-product-button{
-    background-color: white; 
+    background-color: greenyellow; 
     color: black;
     padding: 11px 18px;
     border-radius: 8px;
@@ -380,12 +378,12 @@ textarea.contact-field {
 
 .remove-product-button:hover {
     filter: brightness(0,8);
-    background-color: red;
+    background-color:greenyellow;
     color: white;
 }
 
 .purchase-button{
-    background-color:red;
+    background-color:greenyellow;
     color: white;
     padding: 14px 12px;
     border-radius: 10px;
@@ -396,7 +394,7 @@ textarea.contact-field {
 }
 
 .purchase-button:hover {
-    background-color: white;
+    background-color: greenyellow;
     color: red;
 }
 
