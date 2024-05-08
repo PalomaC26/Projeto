@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color:rgb(189, 189, 218);
+    background-image: url(imagens/logofundo.jpg);
 }
 
 .product-box{
@@ -35,24 +35,24 @@ li {
 }
 
 .sub-items a{
-    color: maroon;
     text-decoration: none;
     font-size: 16px;
 }
 .sub-items a:hover{
     text-decoration: none;
     border-radius: 5px;
-    padding: 0px 3px;
-    color:maroon;
+    padding: 0px 3px
     
 }
 
 .main-header {
-    background-image: url(imagens/);
+    background-color: rgb(189, 189,218);
+    font-family: 'Arial';
     background-position: 50% 39%;
     display: flex;
     flex-direction: column; 
     align-items: center;
+    margin-bottom: 50px;
 }
 .log-zoom{
     transition: transform 0.3s ease;
@@ -68,10 +68,8 @@ li {
 }
 
 .title{
-color: maroon;
 text-align: center;
 font-size: 30px;
-font-family:'Roboto', sans-serif ;
 margin-top: 60px;
 
 }
@@ -81,7 +79,6 @@ margin-top: 60px;
     justify-content: space-between; 
     align-items: center;
     padding: 16px 0; 
-    background-color: rgb(189, 189, 218);
 }
 
 .header-container {
@@ -119,18 +116,15 @@ margin-top: 60px;
     padding: 40px 0px 64px;
 }
 
-.container {
-    max-width: 600px;
-    padding: 0 16px;
-    margin: 0 auto;
-}
+
 
 .title-median{
     font-size: 30px;
     font-family: '', sans-serif;
     color: black;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     text-align: center;
+    
 }
 
 .about-image {
@@ -141,16 +135,8 @@ margin-top: 60px;
 }
 
 .about-description {
-    color: papayawhip;
     text-align: justify;
 }
-
-.main-footer {
-    background-color:white;
-    padding: 15px 0;
-}
-
-
 
 .title-smaller{
     
@@ -174,12 +160,11 @@ margin-top: 60px;
 }
 .container{
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 35px;
 
 }
 .button-form{
-    background-color: greenyellow;
     padding: 5px 7px;
     border-radius: 8px ;
     font-size: 14px;
@@ -188,12 +173,11 @@ margin-top: 60px;
 }
 
 .button-form:hover {
-    background-color: greenyellow;
+    background-color: rgb(220, 238, 192);
     color: beige;
 }
 
 .contact {
-    background-color: lightgrey;
     padding: 60px;
     max-width: 600px;
     margin-right: auto;
@@ -247,8 +231,6 @@ textarea.contact-field {
 }
 
 .title-header {
-    font-family: "Roboto", sans-serif;
-    color:maroon;
     font-size: 38px;
     padding-bottom: 10px;
     margin-top: 130px;
@@ -256,7 +238,6 @@ textarea.contact-field {
 }
 
 .title-large {
-    font-family: "rock s", cursive;
     font-size: 38px;
     color: black;
     text-align: center;
@@ -303,7 +284,6 @@ textarea.contact-field {
 }
 
 .product-price {
-    font-family: "Raleway", sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
@@ -320,7 +300,7 @@ textarea.contact-field {
 
 .table-head-item {
     text-align: start;
-   border-bottom: 1px solid Gray;
+   border-bottom: 1px solid;
    padding-bottom: 6px;
    text-transform: uppercase; 
 }
@@ -379,12 +359,10 @@ textarea.contact-field {
 .remove-product-button:hover {
     filter: brightness(0,8);
     background-color:greenyellow;
-    color: white;
 }
 
 .purchase-button{
     background-color:greenyellow;
-    color: white;
     padding: 14px 12px;
     border-radius: 10px;
     font-size: 18px;
@@ -395,7 +373,6 @@ textarea.contact-field {
 
 .purchase-button:hover {
     background-color: greenyellow;
-    color: red;
 }
 
 .cart-total-container strong{
@@ -407,23 +384,23 @@ textarea.contact-field {
     height: 45px;
     border: 2px solid black;
     border-radius: 5px;
-    background-color: lightsteelblue;
     text-align: center;
 }
 
 
 .container-item{
     display: block;
-    align-items: center;
-    background-color:papayawhip;
+    background-color:rgb(252, 240, 220);
+    
 }
+
+
 
 .main-footer{
     background-image: url(imagens/logofundo.jpg);
-    background-color: maroon;
-    color: black;
+    color: rgb(37, 37, 37);
     padding: 5px 0px;
-    font-size: 18px;
-    font-family: 'Great Vibes', cursive;
-    margin-top: 30px;
+    font-size: 25px;
+    font-family: 'Arial', cursive;
+    margin-top: 50px;
 }
