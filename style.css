@@ -12,11 +12,6 @@ body{
 
 }
 
-.text-p {
-text-align: center;
-font-size: 30px;
-font-family: 'Calibri';
-}
 
 
 .main-header {
@@ -55,8 +50,21 @@ font-family: 'Calibri';
 }
 
 
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+    margin-left:15px ;
+}
+
+.nav-item:hover {
+    color: black;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+
 .title-header {
-    color: rgb(138, 4, 4);
+    color: transparent;
     font-size: 70px;
     padding-bottom: 25px;
     margin-top: 130px;
@@ -81,6 +89,12 @@ font-family: 'Calibri';
      padding-bottom: 30px;
  }
 
+ .product-inicio {
+    display: flex;
+    flex-direction: initial ;
+    text-align: center;
+    align-items: center;
+ }
  
 .product-title {
     font-size: 20px;
@@ -111,7 +125,7 @@ font-family: 'Calibri';
 li {
     list-style-type: none;
 }
-    .nav-item:hover .sub-items{
+    .nav-item:hover{
         display: block;
     }
 
@@ -139,32 +153,8 @@ li {
 }
 
 
-.log-zoom{
-    transition: transform 0.3s ease;
-}
-.log-zoom:hover{
-    transform: scale(1.2);
-}
 
 
-.main-nav {
-    width: 100%; 
-    
-}
-
-.title{
-text-align: center;
-font-size: 30px;
-margin-top: 60px;
-
-}
-
-.header-list-container {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    padding: 16px 0; 
-}
 
 
 
@@ -184,17 +174,6 @@ margin-top: 60px;
     align-items: center;
 }
 
-.nav-item a {
-    text-decoration: none;
-    color: inherit;
-    margin-left:15px ;
-}
-
-.nav-item:hover {
-    color: black;
-    transition: 0.2s;
-    transform: scale(1.2);
-}
 
 .main-about {
     padding: 40px 0px 64px;
@@ -210,6 +189,110 @@ margin-top: 60px;
     margin-bottom: 20px;
 }
 
+
+.container-item{
+    display: block;
+    background-color: rgb(189, 189,218);
+    padding: 60px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 800px;
+    align-items: center;
+   
+}
+
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse; 
+    padding-bottom: 6px;
+    font-size: 28px;
+    display:block;
+}
+
+
+.table-head-item {
+    text-align: start;
+   border-bottom: 1px solid;
+   padding-bottom: 6px;
+   text-transform: uppercase; 
+}
+
+.cart-total-container {
+    border-top: 1px solid;
+    text-align: end;
+    padding: 6px 16px 0 0;
+}
+
+.cart-product {
+    padding: 8px; 
+}
+
+.product-identification {
+    display: flex; 
+    align-items: center; 
+}
+
+.cart-product-image {
+    width: 100px; 
+    height: 80px;
+}
+
+.cart-product-title {
+    margin-left: 13px; 
+}
+
+.cart-product-price {
+    font-family: "Raleway", sans-serif;
+}
+
+.cart-total-container {
+    margin-right: 10px;
+   text-align: center;
+}
+
+
+
+.remove-product-button{
+    background-color:limegreen; 
+    color: black;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+}
+
+.remove-product-button:hover {
+    filter: brightness(0,8);
+    background-color:white;
+}
+
+.purchase-button{
+    background-color:rgb(165, 4, 4);
+    padding: 14px 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 3px 3px black; 
+    margin-bottom:500px ;
+    cursor: pointer;
+ 
+}
+
+.purchase-button:hover {
+    background-color: white;
+} 
+
+.product-qnt-input{
+    width: 50px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 .about-image {
     float: left; 
     margin: 0 20px 10px 0;
@@ -221,7 +304,12 @@ margin-top: 60px;
 
 /*contato*/
 
+.list{
+margin-top: 100px;
 
+
+
+}
 .container{
     text-align: center;
     margin-bottom: 30px;
@@ -318,6 +406,21 @@ textarea.contact-field {
 /*sobre*/
 
 
+.title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    
+    }
+
+   
+.text-p {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Calibri';
+    } 
+
+
 .button{
     background-color: limegreen;
     color: white;
@@ -386,120 +489,22 @@ textarea.contact-field {
     background-color: transparent;
 }
 
-.cart-table {
-    width: 100%;
-    border-collapse: collapse; 
-    padding-bottom: 6px;
-}
 
-.table-head-item {
-    text-align: start;
-   border-bottom: 1px solid;
-   padding-bottom: 6px;
-   text-transform: uppercase; 
-}
 
 .second-col,
 .third-col {
     width: 30%; 
 }
 
-.cart-product {
-    padding: 8px; 
-}
-
-.product-identification {
-    display: flex; 
-    align-items: center; 
-}
-
-.cart-product-image {
-    width: 100px; 
-    height: 80px;
-}
-
-.cart-product-title {
-    margin-left: 13px; 
-}
-
-.cart-product-price {
-    font-family: "Raleway", sans-serif;
-}
-
-.cart-total-container {
-    margin-right: 10px;
-   text-align: center;
-}
-
-.cart-total-container strong {
-    margin-right: 10px;
-}
 
 .box{
     width: 100%;
     height: 100%;
 }
 
-.cart-table{
-    font-size: 28px;
-    display:block;
-}
-
-.remove-product-button{
-    background-color:limegreen; 
-    color: black;
-    padding: 11px 18px;
-    border-radius: 8px;
-    font-size: 16px;
-    box-shadow: 3px 3px black;
-    cursor: pointer;
-}
-
-.remove-product-button:hover {
-    filter: brightness(0,8);
-    background-color:white;
-}
-
-.purchase-button{
-    background-color:rgb(165, 4, 4);
-    padding: 14px 12px;
-    border-radius: 10px;
-    font-size: 18px;
-    box-shadow: 3px 3px black; 
-    margin-bottom:500px ;
-    cursor: pointer;
- 
-}
-
-.purchase-button:hover {
-    background-color: white;
-}
-
-.cart-total-container strong{
-    margin-right: 10px;
-} 
-
-.product-qnt-input{
-    width: 50px;
-    height: 45px;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-align: center;
-}
 
 
-.container-item{
-    display: block;
-    background-color: rgb(189, 189,218);
-    padding: 60px;
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-    max-height: 800px;
-    align-items: center;
-   
-}
-
+/*rodapé*/
 
 
 .main-footer{
