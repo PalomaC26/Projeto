@@ -1,114 +1,54 @@
 
 // Função para adicionar um produto ao carrinho e atualizar valores
 function adicionarProdutoAoCarrinho(event) {
-  // Seleciona o botão clicado
-  const botaoClicado = event.target;
+    // Seleciona o botão clicado
+    const botaoClicado = event.target;
 
-  // Seleciona o container do produto que contém as informações do produto
-  const containerProduto = botaoClicado.closest('.product');
+    // Seleciona o container do produto que contém as informações do produto
+    const containerProduto = botaoClicado.closest('.product');
 
-  // Extrai as informações do produto a partir do container
-  const tituloProduto = containerProduto.querySelector('.product-title').textContent;
-  const precoProduto = containerProduto.querySelector('.product-price').textContent;
-  const imagemProduto = containerProduto.querySelector('.product-image').src;
+    // Extrai as informações do produto a partir do container
+    const tituloProduto = containerProduto.querySelector('.product-title').textContent;
+    const precoProduto = containerProduto.querySelector('.product-price').textContent;
+    const imagemProduto = containerProduto.querySelector('.product-image').src;
 
-  // Seleciona a tabela do carrinho
-  const tabelaCarrinho = document.querySelector('.cart-table tbody');
+    // Seleciona a tabela do carrinho
+    const tabelaCarrinho = document.querySelector('.cart-table tbody');
 
-  // Verifica se o produto já está no carrinho
-  const produtoExistente = tabelaCarrinho.querySelector(`.cart-product .cart-product-image[src="${imagemProduto}"]`);
+    // Verifica se o produto já está no carrinho
+    const produtoExistente = tabelaCarrinho.querySelector(`.cart-product .cart-product-image[src="${imagemProduto}"]`);
 
-  if (produtoExistente) {
-      // Se o produto já estiver no carrinho, aumenta a quantidade no input correspondente
-      const inputQuantidade = produtoExistente.closest('.cart-product').querySelector('.product-qnt-input');
-      inputQuantidade.value = parseInt(inputQuantidade.value) + 1;
-  } else {
-      // Caso contrário, cria uma nova linha para o produto no carrinho
-      const novaLinhaProduto = document.createElement('tr');
-      novaLinhaProduto.classList.add('cart-product');
-      novaLinhaProduto.innerHTML = `
-          <td class="product-identification">
-              <img class="cart-product-image" src="${imagemProduto}" alt="${tituloProduto}">
-              <strong class="cart-product-title">${tituloProduto}</strong>
-          </td>
-          <td><span class="cart-product-price">${precoProduto}</span></td>
-          <td>
-              <input class="product-qnt-input" type="number" value="1" min="1">
-              <button class="remove-product-button" type="button">Remover</button>
-          </td>
-      `;
+    if (produtoExistente) {
+        // Se o produto já estiver no carrinho, aumenta a quantidade no input correspondente
+        const inputQuantidade = produtoExistente.closest('.cart-product').querySelector('.product-qnt-input');
+        inputQuantidade.value = parseInt(inputQuantidade.value) + 1;
+    } else {
+        // Caso contrário, cria uma nova linha para o produto no carrinho
+        const novaLinhaProduto = document.createElement('tr');
+        novaLinhaProduto.classList.add('cart-product');
+        novaLinhaProduto.innerHTML = `
+            <td class="product-identification">
+                <img class="cart-product-image" src="${imagemProduto}" alt="${tituloProduto}">
+                <strong class="cart-product-title">${tituloProduto}</strong>
+            </td>
+            <td><span class="cart-product-price">${precoProduto}</span></td>
+            <td>
+                <input class="product-qnt-input" type="number" value="1" min="1">
+                <button class="remove-product-button" type="button">Remover</button>
+            </td>
+        `;
 
-      // Adiciona a nova linha ao final da tabela do carrinho
-      tabelaCarrinho.appendChild(novaLinhaProduto);
-  }
+        // Adiciona a nova linha ao final da tabela do carrinho
+        tabelaCarrinho.appendChild(novaLinhaProduto);
+    }
 
-  // Seleciona todos os inputs de quantidade no carrinho
-  const inputsQuantidade = document.querySelectorAll('.product-qnt-input');
+    // Seleciona todos os inputs de quantidade no carrinho
+    const inputsQuantidade = document.querySelectorAll('.product-qnt-input');
 
-  // Adiciona evento de mudança de quantidade para os inputs
-  inputsQuantidade.forEach(input => {
-      input.addEventListener('change', updateCartTotal);
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//seleciona todos os elementos com a class product-box
-
-const boxes = document.querySelectorAll(".product-box")
-
-//interação sobre cada elemento box
-boxes.forEach(box => {
-    //encontre elemento img dentro do elemento box atual
-    const img = box.querySelector(".product-image")
-
-    //Adicionar os ouvintes de eventos aos elementos box atual
-    box.addEventListener("mousemove", (e) => {
-        const x = e.clientX - box.getBoundingClientRect().left
-        const y = e.clientY - box.getBoundingClientRect().top
-
-        console.log(x,y)
-        
-        img.style.transformOrigin = `${x}px ${y}px`
-        img.style.transform = "scale(3)"
-        
-    }) 
-    box.addEventListener("mouseleave", (e) =>{
-        img.style.transformOrigin = "center"
-        img.style.transform = "scale(1)"
-    } )  
-})
-
+    // Adiciona evento de mudança de quantidade para os inputs
+    inputsQuantidade.forEach(input => {
+        input.addEventListener('change', updateCartTotal);
+    });
 
     // Seleciona todos os botões de remoção no carrinho
     const botoesRemover = document.querySelectorAll('.remove-product-button');
@@ -217,87 +157,30 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCartTotal();
 });
 
-  
+// Código JavaScript para rolar a página para o topo
 
-// Código JavaScript para rolar a página para o topo 
+// Seleciona o botão
+const botaoVoltarAoTopo = document.getElementById('voltarAoTopo');
 
-    // Seleciona o botão
-    const botaoVoltarAoTopo = document.getElementById('voltarAoTopo');
+// Adiciona um evento de clique ao botão
+botaoVoltarAoTopo.addEventListener('click', () => {
+    // Faz a página voltar ao topo
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
-    // Adiciona um evento de clique ao botão
-    botaoVoltarAoTopo.addEventListener('click', () => {
-        // Faz a página voltar ao topo
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Adiciona um evento de rolagem à janela
-    window.addEventListener('scroll', () => {
-        // Verifica a posição da rolagem
-        if (window.scrollY > 100) { // Exibe o botão quando a página é rolada para baixo
-            botaoVoltarAoTopo.style.display = 'block';
-        } else { // Oculta o botão quando a página está no topo
-            botaoVoltarAoTopo.style.display = 'none';
-        }
-    });
-
-    // Este evento é acionado quando o DOM está completamente carregado
-document.addEventListener("DOMContentLoaded", function () {
-    // Seleciona todos os botões de remoção de produtos
-    const removeButtons = document.querySelectorAll(".remove-product-button");
-    // Seleciona todos os inputs de quantidade de produtos
-    const quantityInputs = document.querySelectorAll(".product-qnt-input");
-    // Seleciona o elemento que mostra o valor total do carrinho
-    const cartTotalElement = document.querySelector(".cart-total-container span");
-    // Inicializa o valor total do carrinho
-    let cartTotal = parseFloat(cartTotalElement.textContent.replace("R$ ", ""));
-
-    // Função para atualizar o valor total do carrinho
-    function updateCartTotal() {
-        // Reinicia o valor total do carrinho
-        cartTotal = 0;
-        // Seleciona todos os produtos no carrinho
-        const cartProducts = document.querySelectorAll(".cart-product");
-
-        // Itera sobre cada produto no carrinho
-        cartProducts.forEach((product) => {
-            // Seleciona o elemento que mostra o preço do produto
-            const priceElement = product.querySelector(".cart-product-price");
-            // Seleciona o input de quantidade do produto
-            const quantityInput = product.querySelector(".product-qnt-input");
-            // Extrai o preço e a quantidade do produto
-            const price = parseFloat(priceElement.textContent.replace("R$ ", ""));
-            const quantity = parseInt(quantityInput.value);
-            // Calcula o subtotal do produto e adiciona ao valor total do carrinho
-            cartTotal += price * quantity;
-        });
-
-        // Atualiza o valor total do carrinho no elemento HTML
-        cartTotalElement.textContent = "R$ " + cartTotal.toFixed(2);
+// Adiciona um evento de rolagem à janela
+window.addEventListener('scroll', () => {
+    // Verifica a posição da rolagem
+    if (window.scrollY > 100) { // Exibe o botão quando a página é rolada para baixo
+        botaoVoltarAoTopo.style.display = 'block';
+    } else { // Oculta o botão quando a página está no topo
+        botaoVoltarAoTopo.style.display = 'none';
     }
-
-    // Adiciona evento de clique para os botões de remoção de produtos
-    removeButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-            // Seleciona a linha do produto a ser removido
-            const productRow = this.parentElement.parentElement;
-            // Remove a linha do produto do carrinho
-            productRow.remove();
-            // Chama a função para atualizar o valor total do carrinho
-            updateCartTotal();
-        });
-    });
-    // Adiciona evento de mudança de quantidade para os inputs
-    quantityInputs.forEach((input) => {
-        input.addEventListener("change", updateCartTotal);
-    });
-
-    // Chama a função para atualizar o valor total inicialmente
-    updateCartTotal();
 });
 
 
-/*-------------------// BANNER //------------------*/
-/*-------------------// BANNER //------------------*/
+
+//-------------------------------------------------------------------------
 
 // Código JavaScript para banner automatico com botoes manuais
 
@@ -356,11 +239,3 @@ let autoPlayInterval;
 
 // Inicia o avanço automático a cada 3 segundos
 autoPlayInterval = setInterval(nextSlide, 3000);
-
-
-/*-----------------// ADICIONAR O PRODUTO AO CARRINHO //-----------------*/
-/*-----------------// ADICIONAR O PRODUTO AO CARRINHO //-----------------*/
-
-
-
-

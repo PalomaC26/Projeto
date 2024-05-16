@@ -430,7 +430,7 @@ textarea.contact-field {
 }
 
 
-.button{
+.button-hover{
     background-color: rgb(145, 187, 82);
     color: white;
     padding: 8px 6px;
@@ -440,13 +440,6 @@ textarea.contact-field {
     font-weight: bold;
     cursor: pointer;
 }
-
-.button:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
-}
-
 
 .title-large {
     font-size: 38px;
@@ -517,6 +510,11 @@ textarea.contact-field {
     margin-top: 40px;
 }
 
+.footer-item {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0; /*Aplica espaçamento 15px cima/baixo e 0px equerda/direita*/
+ }
 
 .list-container {
     display: flex; /*Deixar tudo na mesma linha*/
@@ -589,3 +587,8 @@ textarea.contact-field {
  }
  
  
+
+
+
+
+
