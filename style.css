@@ -104,8 +104,8 @@ body{
 }
 
 .product-image {
-    width: 430px;
-    height: 330px;
+    width: 400px;
+    height: 300px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 10px black;
 }
@@ -310,7 +310,7 @@ margin-top: 100px;
     text-align: center;
     margin-bottom: 30px;
     font-size: 35px;
-    background-color: rgb(189, 189,218);
+    background-color:#c7a675;;
   
   }
 
@@ -340,18 +340,13 @@ margin-top: 100px;
     justify-content: space-between; 
 }
 
-.container{
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 35px;
-  background-color: rgb(189, 189,218);
 
-}
 .button-form{
+    background-color: rgb(145, 187, 82) ;
     padding: 5px 7px;
     border-radius: 8px ;
     font-size: 14px;
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px  black;
    
 }
 
@@ -366,7 +361,7 @@ margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
-    background-color:  rgb(189, 189,218);
+    background-color:#c7a675;;
   
 }
 
@@ -422,8 +417,8 @@ textarea.contact-field {
     
     }
  .image{
-    width: 600px;
-    height: 300px;
+    width: 650px;
+    height: 350px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 10px black;
     margin-left: 630px;
@@ -434,8 +429,8 @@ textarea.contact-field {
     background-color: rgb(145, 187, 82);
     color: white;
     padding: 8px 6px;
-    border-radius: 10px;
-    font-size: 14px;
+    border-radius: 8px;
+    font-size: 12px;
     box-shadow: 3px 3px black;
     font-weight: bold;
     cursor: pointer;
@@ -502,8 +497,7 @@ textarea.contact-field {
 
 .main-footer{
     background-image: url(imagens/1714991874423.jpg);
-    color:black;
-   margin-right: 100px;
+    color:#815410;
     padding: 8px 0px;
     font-size: 30px;
     font-family: 'Dancing Script', cursive;
@@ -524,12 +518,11 @@ textarea.contact-field {
  
 
 #voltarAoTopo{
+    background-color: #f7dfbc;;
     display: none;
     position: fixed;
     bottom: 350px;
     right: 50px;
-    background-color: black;
-    color: red;
     border: none;
     padding: 0;
     cursor: pointer;
@@ -562,7 +555,7 @@ textarea.contact-field {
  
  .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 500px;
     display: block;
  }
  

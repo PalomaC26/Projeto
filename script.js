@@ -1,4 +1,3 @@
-
 // Função para adicionar um produto ao carrinho e atualizar valores
 function adicionarProdutoAoCarrinho(event) {
     // Seleciona o botão clicado
@@ -156,6 +155,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para atualizar o valor total inicialmente
     updateCartTotal();
 });
+
+//-------------------------------------------------------------------------
 
 // Código JavaScript para rolar a página para o topo
 
