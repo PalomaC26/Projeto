@@ -460,7 +460,7 @@ textarea.contact-field {
 }
 
 .product-price-container {
-    width: 500px;
+    width: 400px;
   
     justify-content: space-between;
     align-items: center;
@@ -521,7 +521,7 @@ textarea.contact-field {
 .list-container {
     display: flex; /*Deixar tudo na mesma linha*/
     align-items: center; /* Alinha todos os elementos*/
-    justify-content: space-between; /*Colar nome de um lado e lista de icones do outro*/
+    justify-content: space-around; /*Colar nome de um lado e lista de icones do outro*/
  }
 
  .title-footer{
