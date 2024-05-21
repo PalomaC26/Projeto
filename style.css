@@ -68,9 +68,10 @@ body{
     font-size: 60px;
     padding-bottom: 20px;
     margin-bottom: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
    font-family: 'Dancing script', cursive;
+
 }
 
 
@@ -448,7 +449,7 @@ textarea.contact-field {
     gap: 60px;
     padding-bottom: 30px;
     margin: 30px;
-    margin-top: 300px;
+    margin-top: 150px;
 }
 
 .product {
@@ -508,7 +509,7 @@ textarea.contact-field {
     padding: 8px 0px;
     font-size: 30px;
     font-family: 'Dancing Script', cursive;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .footer-item {
@@ -548,23 +549,7 @@ textarea.contact-field {
     height: 45px;
 }
 
- /*---------------------------Vídeo-------------------------------------*/
 
- /* Estilo para o vídeo de fundo */
- .video {
-    position: absolute;
-     right: 0;
-     bottom: 0;
-     min-width: 100%;
-     min-height: 100%;
-     z-index: -1;
-     object-fit: cover;
- }
-  
- 
-  hr {
-     width: 100%; /*Ocupar toda a area disponivel*/
-  }
  
   .nav-item a {
      text-decoration: none; /*remove o underline do ancora*/
@@ -585,10 +570,9 @@ textarea.contact-field {
     text-align: center;
     color: azure;
 background-color: #ca9443 ;
-
   }
    .contato{
-    margin: 400px;
+    margin: 900px;
    }
 
 
