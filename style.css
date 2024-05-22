@@ -64,6 +64,7 @@ body{
 
 
 .title-header {
+    margin-top: 30px;
     color:#815410;
     font-size: 60px;
     padding-bottom: 20px;
@@ -74,8 +75,32 @@ body{
 
 }
 
+.title-start {
+    margin-bottom: 3000px;
+    color:#110b01;
+    font-size: 60px;
+    padding-bottom: 20px;
+    margin-bottom: auto;
+    margin-top: 30px;
+    text-align: center;
+   font-family: 'Dancing script', cursive;
+
+}
+
+.about-description {
+    margin-bottom: 30px;
+    color: rgb(12, 1, 1);
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    margin: 30px;
+}
+
+
 
 .description {
+    margin-bottom: 30px;
     color: rgb(61, 5, 5);
     text-align: center;
     padding-bottom: 10px;
@@ -274,6 +299,7 @@ li {
 
 .purchase-button:hover {
     background-color: white;
+    transform: scale(1.1);
 } 
 
 .product-qnt-input{
@@ -415,7 +441,7 @@ textarea.contact-field {
  .image{
     width: 650px;
     height: 350px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     box-shadow: 5px 5px 10px black;
     margin-left: 630px;
 }
@@ -432,6 +458,10 @@ textarea.contact-field {
     cursor: pointer;
 }
 
+.button-hover:hover {
+    transform: scale(1.1);
+}
+
 .title-large {
     font-size: 38px;
     color: black;
@@ -442,25 +472,25 @@ textarea.contact-field {
 
 /*produtos*/
 
+
 .product-container {
   display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     margin: 30px;
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .product {
-  
     flex-direction: column-reverse;
     align-items: center;
   
 }
 
 .product-price-container {
-    width: 400px;
+    width: 100%;
   
     justify-content: space-between;
     align-items: center;
@@ -477,7 +507,7 @@ textarea.contact-field {
     width: 400px;
     height: 300px;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 3px 3px 8px 8px black;
 }
 
@@ -576,5 +606,17 @@ background-color: #ca9443 ;
    }
 
 
+ /*---------------------------Vídeo-------------------------------------*/
 
-
+ /* Estilo para o vídeo de fundo */
+ .video {
+    position: absolute;
+     right: 0;
+     bottom: 250px;
+     min-width: 100%;
+     min-height: 100%;
+     z-index: -1;
+     object-fit: cover;
+      
+ }
+  
